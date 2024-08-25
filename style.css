@@ -1,42 +1,67 @@
-body{
+body {
     background-color: #ffbe55;
-    background-image:url(/imgs/dog-and-cat-paws-with-sharp-claws-cute-animal-footprints-png.webp) ;
+    background-image: url(/imgs/dog-and-cat-paws-with-sharp-claws-cute-animal-footprints-png.webp);
     background-size: 30px;
-    
+    background-repeat: repeat; /* Faz o background se repetir em ambas as direções */
+    animation: moveBackground 10s linear infinite; /* Adiciona a animação */
 }
 
-.divgeral{
+@keyframes moveBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -300px -300px; /* Altere os valores para ajustar a velocidade e a direção */
+    }
+}
+
+.divgeral {
     background-color: white;
 }
 
-.foto{
+.foto {
    text-align: center;
 }
 
-.foto img{
+.foto img {
     border-radius: 40px;
     margin-bottom: -40px;
 }
 
-.div_para_background{
+.div_para_background {
     background-color: white;
-    margin:  0px 200px 0px 200px;
+    margin: 0px 200px 0px 200px;
     border-radius: 20px;
 }
 
-
-.texto{
+.texto {
     text-align: center;
-    padding: 10px;
+    padding: 5px;
 }
 
-.texto h1{
+.texto h1 {
     font-size: 50px;
     font-family: 'Courier New', Courier, monospace;
     color: rgb(0, 0, 0);
 }
 
-.texto p{
-    padding:  0px 150px 0px 150px;
+.texto p {
+    padding: 0px 120px 0px 120px;
     font-family: 'Courier New', Courier, monospace;
+}
+
+button{
+    background-color: white;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: #ffbe55;
+    color: white;
+    
 }
